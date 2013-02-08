@@ -4,7 +4,7 @@ Greyback Boilerplate
 USAGE: 
 	1. Download the .zip file from above.
 	2. Files to edit for design
-		a. variables.less (can be downloaded from http://paintstrap.com/)
+		a. variables.less (can be created with https://kuler.adobe.com/ and downloaded from http://paintstrap.com/)
 		b. styles.less
 		c. index.html
 	3. Once site is ready to launch (all versions, including mobile) 
