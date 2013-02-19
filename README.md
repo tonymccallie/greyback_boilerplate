@@ -19,10 +19,14 @@ Video Scaling: wrap videos with
 ```<div class="scaleVid ratio16x9">
 	VIDEO HTML
 </div>```
+
 OR
+
 ```<div class="scaleVid ratio4x3">
 	VIDEO HTML
 </div>```
+
+And remove any width/height attributes in the video html.
 
 ToDo:
 -----
