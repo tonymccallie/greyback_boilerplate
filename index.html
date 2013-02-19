@@ -7,10 +7,22 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<!-- Le styles -->
+<!-- DEVELOPMENT -->
 	<link rel="stylesheet/less" type="text/css" href="css/styles.less" />
-	<!-- Required for LESS / Remove after compiling production css -->
+	<script type="text/javascript">
+		less = {
+			env: "development", // or "production"
+			poll: 1000,         // when in watch mode, time in ms between polls - add '#!watch' to url to enable or less.watch(); in console
+			dumpLineNumbers: "mediaQuery", // or "mediaQuery" or "all"
+		};
+	</script>
 	<script src="js/less-1.3.3.min.js"></script>
+<!-- /DEVELOPMENT -->
+	
+<!-- PRODUCTION -->
+	<!-- <link rel="stylesheet/less" type="text/css" href="css/styles.css" /> -->
+<!-- /PRODUCTION -->
+	
 	
 	<!-- Le Scripts -->
 	<script src="js/jquery-1.9.1.min.js"></script>
@@ -68,6 +80,7 @@
 		<div class="row-fluid">
 			<div class="span8">
 				<h1>Page Title</h1>
+				<div class="scaleVid ratio16x9">VIDEO HTML HERE</div>
 			</div>
 			<div class="span4">
 				<img src="http://placehold.it/350x150">
