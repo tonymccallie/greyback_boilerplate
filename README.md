@@ -15,13 +15,11 @@ Usage:
 Notes:
 ------
 Video Scaling: wrap videos with
-<pre>
-<code>
+<pre><code>
 	<div class="scaleVid ratio16x9">
 		VIDEO HTML
 	</div>
-</code>
-</pre>
+</code></pre>
 
 ToDo:
 -----
