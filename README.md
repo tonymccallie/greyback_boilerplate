@@ -15,14 +15,19 @@ Usage:
 Notes:
 ------
 Video Scaling: wrap videos with
-<pre><code>
 	<div class="scaleVid ratio16x9">
 		VIDEO HTML
 	</div>
-</code></pre>
 
 ToDo:
 -----
 - [X] Include the latest bootstrap, fontawesome, jquery, html5shiv, and less
 - [X] Integrate bootstrap-responsive
 - [ ] Dunno...
+
+Upgrade:
+--------
+- FontAwesome
+	* Overwrite font files and check path in font-awesome.less
+- Bootstrap
+	* Modify bootstrap.less for font-awesome.less and variables.less location
