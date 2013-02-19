@@ -11,3 +11,20 @@ Usage:
 3. Once site is ready to launch (all versions, including mobile) 
 	* Compile styles.less into styles.min.css for better performance
 	* Remove less-x.x.x.min.js
+
+Notes:
+------
+Video Scaling: wrap videos with
+<pre>
+<code>
+	<div class="scaleVid ratio16x9">
+		VIDEO HTML
+	</div>
+</code>
+</pre>
+
+ToDo:
+-----
+- [X] Include the latest bootstrap, fontawesome, jquery, html5shiv, and less
+- [X] Integrate bootstrap-responsive
+- [ ] Dunno...

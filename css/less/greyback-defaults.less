@@ -671,21 +671,27 @@ li.staff_member {
 	color: #ffffff;
 }
 
-.intrinsicRatio {
+.scaleVid {
 	position:relative;
 	height:0;
 }
-.ratio16to9 {
+
+.ratio16x9 {
 	padding-bottom:56.25%;
+}
+
+.ratio4x3 {
+	padding-bottom:75%;
 }
 
 .audioPlayerRatio {
 	padding-bottom:15%;
 }
 
-.intrinsicRatio div,
-.intrinsicRatio object,
-.intrinsicRatio embed {
+.scaleVid div,
+.scaleVid object,
+.scaleVid embed
+.scaleVid iframe {
 	position:absolute !important;
 	/* Everything following breaks iPhone and iPad(!) */
 	/*
