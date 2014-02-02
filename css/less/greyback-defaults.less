@@ -16,38 +16,44 @@
 .centered {
 	text-align: center;
 }
+
+.flip-horizontal {
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: fliph; /*IE*/
+    filter: fliph; /*IE*/
+}
+
+.flip-vertical {
+    -moz-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    transform: scaleY(-1);
+    -ms-filter: flipv; /*IE*/
+    filter: flipv; /*IE*/
+}
 	
 /* FORMS */
 .form-row-fluid {
 	width: 100%;
-	float: left;
+	.clearfix();
+	[class*="span"] {
+		.input-block-level();
+		float: left;
+		margin-left: @fluidGridGutterWidth;
+		*margin-left: @fluidGridGutterWidth - (.5 / @gridRowWidth * 100 * 1%);
+	}
+	[class*="span"]:first-child {
+		margin-left: 0;
+	}
+	
+	// Space grid-sized controls properly if multiple per line
+	.controls-row [class*="span"] + [class*="span"] {
+		margin-left: @fluidGridGutterWidth;
+	}
 }
-
-.text INPUT, SELECT, TEXTAREA, .password input,
-.form_tiny input, .form_small input,
-.form_large input {
-	font-size: 14px;
-}
-
-.forms_form form > div {
-	//margin-bottom: 1.5em;
-}
-
-LABEL {
-	display: block;
-}
-
-.radio LABEL, .checkbox LABEL {
-	display: inline;
-	font-size: 1.2em;
-}
-
-.radio {
-	width: 100%;
-	float: left;
-	margin-bottom: 1em;
-}
-
 
 /* STORE / ACCOUNTS / CONTRIBUTE */
 .store_controls {
@@ -636,16 +642,149 @@ li.staff_member {
 }
 
 .audioPlayerRatio {
-	padding-bottom:15%;
+	padding-bottom:35px;
 }
 
-.scaleVid div,
-.scaleVid object,
-.scaleVid embed,
-.scaleVid iframe {
+.scaleVid > div,
+.scaleVid > object,
+.scaleVid > embed,
+.scaleVid > iframe,
+.scaleVid > video {
 	position:absolute !important;
 	top:0;
 	left:0;
 	width:100%;
 	height:100%;
+	z-index: 100;
+}
+
+//WYSIHTML5
+.wysiwyg-font-size-smaller {
+  font-size: smaller;
+}
+
+.wysiwyg-font-size-larger {
+  font-size: larger;
+}
+
+.wysiwyg-font-size-xx-large {
+  font-size: xx-large;
+}
+
+.wysiwyg-font-size-x-large {
+  font-size: x-large;
+}
+
+.wysiwyg-font-size-large {
+  font-size: large;
+}
+
+.wysiwyg-font-size-medium {
+  font-size: medium;
+}
+
+.wysiwyg-font-size-small {
+  font-size: small;
+}
+
+.wysiwyg-font-size-x-small {
+  font-size: x-small;
+}
+
+.wysiwyg-font-size-xx-small {
+  font-size: xx-small;
+}
+
+.wysiwyg-color-black {
+  color: black;
+}
+
+.wysiwyg-color-silver {
+  color: silver;
+}
+
+.wysiwyg-color-gray {
+  color: gray;
+}
+
+.wysiwyg-color-white {
+  color: white;
+}
+
+.wysiwyg-color-maroon {
+  color: maroon;
+}
+
+.wysiwyg-color-red {
+  color: red;
+}
+
+.wysiwyg-color-purple {
+  color: purple;
+}
+
+.wysiwyg-color-fuchsia {
+  color: fuchsia;
+}
+
+.wysiwyg-color-green {
+  color: green;
+}
+
+.wysiwyg-color-lime {
+  color: lime;
+}
+
+.wysiwyg-color-olive {
+  color: olive;
+}
+
+.wysiwyg-color-yellow {
+  color: yellow;
+}
+
+.wysiwyg-color-navy {
+  color: navy;
+}
+
+.wysiwyg-color-blue {
+  color: blue;
+}
+
+.wysiwyg-color-teal {
+  color: teal;
+}
+
+.wysiwyg-color-aqua {
+  color: aqua;
+}
+
+.wysiwyg-text-align-right {
+  text-align: right;
+}
+
+.wysiwyg-text-align-center {
+  text-align: center;
+}
+
+.wysiwyg-text-align-left {
+  text-align: left;
+}
+
+.wysiwyg-float-left {
+  float: left;
+  margin: 0 8px 8px 0;
+}
+
+.wysiwyg-float-right {
+  float: right;
+  margin: 0 0 8px 8px;
+}
+
+.wysiwyg-clear-right {
+  clear: right;
+}
+
+.wysiwyg-clear-left {
+  clear: left;
 }

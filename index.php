@@ -1,3 +1,6 @@
+<?php
+	$webroot = $_SERVER['REQUEST_URI'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +14,7 @@
 	$develop = true;
 	if($develop):
 ?>
-	<link rel="stylesheet/less" type="text/css" href="/css/styles.less" />
+	<link rel="stylesheet/less" type="text/css" href="<?php echo $webroot ?>css/styles.less" />
 	<script type="text/javascript">
 		less = {
 			env: "development", // or "production"
@@ -19,27 +22,27 @@
 			dumpLineNumbers: "mediaQuery", // or "mediaQuery" or "all"
 		};
 	</script>
-	<script src="/js/less-1.5.0.min.js"></script>
+	<script src="<?php echo $webroot ?>js/less-1.6.2.min.js"></script>
 <?php else: ?>
-	<link rel="stylesheet" type="text/css" href="/css/styles.min.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo $webroot ?>css/styles.min.css" />
 <?php endif ?>
 	
 	
-	<script src="/js/jquery-1.10.2.min.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
-	<script src="/js/custom.js"></script>
+	<script src="<?php echo $webroot ?>js/jquery-1.11.0.min.js"></script>
+	<script src="<?php echo $webroot ?>js/bootstrap.min.js"></script>
+	<script src="<?php echo $webroot ?>js/custom.js"></script>
 
 	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
-		<script src="js/html5shiv.js"></script>
+		<script src="<?php echo $webroot ?>js/html5shiv.js"></script>
 	<![endif]-->
 	
 	<!-- Fav and touch icons -->
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/ico/apple-touch-icon-144-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ico/apple-touch-icon-114-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ico/apple-touch-icon-72-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" href="/ico/apple-touch-icon-57-precomposed.png">
-	<link rel="shortcut icon" href="/ico/favicon.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo $webroot ?>ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo $webroot ?>ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo $webroot ?>ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="<?php echo $webroot ?>ico/apple-touch-icon-57-precomposed.png">
+	<link rel="shortcut icon" href="<?php echo $webroot ?>ico/favicon.png">
 	
 	<!-- Google Analytics -->
 	<!-- /Google Analytics -->
@@ -92,7 +95,11 @@
 		<div class="row-fluid">
 			<div class="span8">
 				<h1>Page Title</h1>
-				<div class="scaleVid ratio16x9">VIDEO HTML HERE</div>
+				<p>Brilliant lemming until sincerely oh oh along or for less like because hummingbird hence hey much besides wow up darn jeez more far struck kneeled yikes before ceremonial vitally a twitched and fed.</p>
+				<p>Moral lizard next spurious anonymous while yikes indescribable sat less conscientiously less articulately spun spontaneously fretfully browbeat a and unjustifiably goodness manatee noisily speechless winced hello instead expediently crud the blew excepting.</p>
+				<p>Goldfinch gulped baboon pragmatically a guffawed mounted one guinea about much crud rhinoceros foretold and fled some luscious as less dim and until a without placid or and more the behind egotistically so grotesque cm the reliable and coward much dismally.</p>
+				<p>Inside dismounted deer the according hamster ahead cordially wallaby cracked well squid sadistically lobster minimal or shark after aside lynx one pragmatically however compulsively well and much infinitesimal jeepers labrador more ape and abhorrently.</p>
+				<p>More much before as but one that preparatory caribou more goodness began fateful some agreeable yikes far below this jolly drooled temperate cockatoo more this crab jeez much save impartially excluding hey erratic grew along because more evil far immaculate jeepers yikes turned archly under.</p>
 			</div>
 			<div class="span4">
 				<img src="http://placehold.it/350x150">
