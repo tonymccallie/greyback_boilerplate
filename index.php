@@ -1,5 +1,5 @@
 <?php
-	$webroot = $_SERVER['REQUEST_URI'];
+	$webroot = $this->webroot;
 ?>
 <!DOCTYPE html>
 <html lang="en">
