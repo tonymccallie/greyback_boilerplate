@@ -24,7 +24,6 @@
 	
 	
 	<script src="<?php echo $this->webroot ?>js/jquery-1.11.2.min.js"></script>
-	<script src="<?php echo $this->webroot ?>js/uikit.min.js"></script>
 	<script src="<?php echo $this->webroot ?>js/custom.js"></script>
 
 	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
