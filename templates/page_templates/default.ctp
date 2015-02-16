@@ -14,26 +14,41 @@
 				<!-- /Mobile Menu Button -->
 
 				<a class="brand" href="#">Project name</a>
-
-				<div class="nav-collapse collapse pull-right">
-					<ul class="nav">
-						<li class="active"><a href="#">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#contact">Contact</a></li>
-						<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li class="divider"></li>
-							<li class="nav-header">Nav header</li>
-							<li><a href="#">Separated link</a></li>
-							<li><a href="#">One more separated link</a></li>
-						</ul>
-					</li>
+<!-- DELETE menu -->
+				<div id="template_link_1" class="plugin_bootstrap_navigation">
+					<ul id="" class="ullevel_1 nav nav-pills pull-right">
+						<li id="_home" class="navigation_active activenavigation_first ">
+							<a href="/home">Home</a>
+						</li>
+						<li id="_about" class="dropdown ">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
+							<ul id="" class="ullevel_2 dropdown-menu">
+								<li id="_about-staff" class="navigation_first ">
+									<a href="/about-staff">Staff</a>
+								</li>
+								<li id="_about-history" class="navigation_last ">
+									<a href="/about-history">History</a>
+								</li>
+							</ul>
+						</li>
+						<li id="_resources" class="dropdown ">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+							<ul id="" class="ullevel_2 dropdown-menu">
+								<li id="_resources-downloads" class="navigation_first ">
+									<a href="/resources-downloads">Downloads</a>
+								</li>
+								<li id="_resources-news" class="navigation_last ">
+									<a href="/resources-news">News</a>
+								</li>
+							</ul>
+						</li>
+						<li id="_contact" class="navigation_last ">
+							<a href="/contact">Contact</a>
+						</li>
 					</ul>
 				</div>
+<!-- END DELETE menu -->				
+					###MENU###
 			</div>
 		</div>
 	</div>
@@ -47,16 +62,87 @@
 	<div class="container">
 		<div class="row-fluid">
 			<div class="span8">
-				<h1>Page Title</h1>
-				<p>Brilliant lemming until sincerely oh oh along or for less like because hummingbird hence hey much besides wow up darn jeez more far struck kneeled yikes before ceremonial vitally a twitched and fed.</p>
-				<p>Moral lizard next spurious anonymous while yikes indescribable sat less conscientiously less articulately spun spontaneously fretfully browbeat a and unjustifiably goodness manatee noisily speechless winced hello instead expediently crud the blew excepting.</p>
-				<p>Goldfinch gulped baboon pragmatically a guffawed mounted one guinea about much crud rhinoceros foretold and fled some luscious as less dim and until a without placid or and more the behind egotistically so grotesque cm the reliable and coward much dismally.</p>
-				<p>Inside dismounted deer the according hamster ahead cordially wallaby cracked well squid sadistically lobster minimal or shark after aside lynx one pragmatically however compulsively well and much infinitesimal jeepers labrador more ape and abhorrently.</p>
-				<p>More much before as but one that preparatory caribou more goodness began fateful some agreeable yikes far below this jolly drooled temperate cockatoo more this crab jeez much save impartially excluding hey erratic grew along because more evil far immaculate jeepers yikes turned archly under.</p>
+				###CONTENT###
+<!-- DELETE content -->
+				<div>
+					<h1>Header 1</h1>
+					<p>Against earthworm jay apart aardvark aside goodness ironically above glanced oh forward far one bore a regarding contemplated below artfully falcon leopard while interbred much one the fanatically iguanodon wow much where the less up beyond regardless much excluding yawned obdurately as like since while sold alas.</p>
+					<h2>Header 2</h2>
+					<p>Fed less this scornfully much much reindeer the that and more alas hence steadfastly opposite hatchet approvingly off swam sank eel some gosh piquant said around kookaburra ecstatically this much surreptitiously insufferably overslept infinitesimal much tortoise unhopeful more.</p>
+					<h3>Header 3</h3>
+					<p>Far much considering octopus more thus goodness one the decisively widely hello much fallaciously indirect faultily because less owing flashy goodness dog where licentious infinitesimal blubbered one when hey this the.</p>
+					<h4>Header 4</h4>
+					<p>Following tamarin scowled much dear groggily and that dear labrador and goodness one ladybug indiscreet therefore and hey darn yet in normally much that flamingo and and hello apart and much much opposite a more babbled the persistently some upon smirked the much jeepers and.</p>
+					<ul>
+						<li>Unordered List</li>
+						<li>List Item</li>
+						<li>List Item</li>
+						<li>List Item</li>
+						<li>List Item
+							<ul>
+								<li>Unordered List</li>
+								<li>List Item</li>
+								<li>List Item</li>
+								<li>List Item</li>
+							</ul>
+						</li>
+					</ul>
+					<ol>
+						<li>Ordered List</li>
+						<li>List Item</li>
+						<li>List Item</li>
+						<li>List Item</li>
+						<li>List Item
+							<ol>
+								<li>Ordered List</li>
+								<li>List Item</li>
+								<li>List Item</li>
+								<li>List Item</li>
+							</ol>
+						</li>
+					</ol>
+
+				</div>
+<!-- END DELETE content -->
 			</div>
 			<div class="span4">
 				<img src="http://placehold.it/350x150">
 				<h4>Navigation</h4>
+				###SIDEBAR###
+<!-- DELETE submenu-->
+				<div id="template_link_1" class="plugin_page_site_navigation">
+					<ul id="sub_nav" class="ullevel_1">
+						<li id="sub_nav_home" class="navigation_active navigation_first ">
+							<a href="/greyback_razor/home">Home</a>
+						</li>
+						<li id="sub_nav_about" class="">
+							<a href="/greyback_razor/about">About</a>
+							<ul id="" class="ullevel_2">
+								<li id="_about-staff" class="navigation_first ">
+									<a href="/greyback_razor/about-staff">Staff</a>
+								</li>
+								<li id="_about-history" class="navigation_last ">
+									<a href="/greyback_razor/about-history">History</a>
+								</li>
+							</ul>
+						</li>
+						<li id="sub_nav_resources" class="">
+							<a href="/greyback_razor/resources">Resources</a>
+							<ul id="" class="ullevel_2">
+								<li id="_resources-downloads" class="navigation_first ">
+									<a href="/greyback_razor/resources-downloads">Downloads</a>
+								</li>
+								<li id="_resources-news" class="navigation_last ">
+									<a href="/greyback_razor/resources-news">News</a>
+								</li>
+							</ul>
+						</li>
+						<li id="sub_nav_contact" class="navigation_last ">
+							<a href="/greyback_razor/contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+<!-- END DELETE submenu-->
 			</div>
 		</div>
 	</div>
@@ -64,8 +150,11 @@
 	<div id="footer">
 		<div class="container">
 			<div class="row-fluid">
-				<div class="span12">
+				<div class="span6">
 					<h4>Footer</h4>
+				</div>
+				<div class="span6 text-right">
+					Copyright
 				</div>
 			</div>
 		</div>
