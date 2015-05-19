@@ -14,6 +14,7 @@
 				<!-- /Mobile Menu Button -->
 
 				<a class="brand" href="#">Project name</a>
+				<div class="nav-collapse collapse">
 <!-- DELETE menu -->
 				<div id="template_link_1" class="plugin_bootstrap_navigation">
 					<ul id="" class="ullevel_1 nav nav-pills pull-right">
@@ -47,8 +48,9 @@
 						</li>
 					</ul>
 				</div>
-<!-- END DELETE menu -->				
+<!-- END DELETE menu -->			
 					###MENU###
+				</div>
 			</div>
 		</div>
 	</div>
